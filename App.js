@@ -10,10 +10,12 @@ const stack=  createStackNavigator()
 import usuariosLista from "./screens/usuariosLista";
 import usuarioCrear from "./screens/usuarioCrear";
 import usuarioDetalle from "./screens/usuarioDetalle";
+import usuarioRegistro from "./screens/usuarioRegistro";
 
 function MyStack() {
   return(
     <stack.Navigator>
+      <stack.Screen name="usuarioRegistro"  component={usuarioRegistro} options= {{title:'Registrar Usuario'}}/>
       <stack.Screen name="usuariosLista"  component={usuariosLista} options= {{title:'Lista de Usuarios'}}/>
       <stack.Screen name="usuarioCrear"  component={usuarioCrear} options= {{title:'Usuario Detalle'}}/>
       <stack.Screen name="usuarioDetalle"  component={usuarioDetalle} options= {{title:'Crear Usuario'}}/>
